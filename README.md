@@ -87,7 +87,7 @@ create new token
 
 ```json
 {
-  "email": "john@test.com",
+  "email": "duc.ngo@gmail.com",
   "twoFactorAuthenticationCode": "903927"
 }
 ```

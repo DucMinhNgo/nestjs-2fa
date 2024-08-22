@@ -12,6 +12,14 @@ export class UsersService {
       twoFactorAuthenticationSecret: 'H4PDSPALPFIXKH3W',
       isTwoFactorAuthenticationEnabled: false,
     },
+    {
+      userId: 1,
+      email: 'duy.pham@gmail.com',
+      username: 'duypham',
+      password: '123456',
+      twoFactorAuthenticationSecret: 'H4PDSPALPFIXKH3A',
+      isTwoFactorAuthenticationEnabled: false,
+    },
   ];
 
   async findOne(email: string): Promise<User | undefined> {
