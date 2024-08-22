@@ -49,12 +49,12 @@ export class AuthenticationService {
   }
 
   async generateTwoFactorAuthenticationSecret(user: User) {
-    // const secret = authenticator.generateSecret();
+    // const secret = authenticator.generate('H4PDSPALPFIXKH3W');
     // console.log(authenticator.generateSecret());
 
-    const secret = "H4PDSPALPFIXKH3W";
+    const secret = user.twoFactorAuthenticationSecret;
 
-    const otpAuthUrl = authenticator.keyuri(user.email, 'DucNgo', secret);
+    const otpAuthUrl = authenticator.keyuri(user.email, 'DucNgo', user.twoFactorAuthenticationSecret);
 
     await this.usersService.setTwoFactorAuthenticationSecret(
       secret,

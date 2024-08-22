@@ -9,7 +9,7 @@ export class UsersService {
       email: 'duc.ngo@gmail.com',
       username: 'ducngo',
       password: '123456',
-      twoFactorAuthenticationSecret: '111111',
+      twoFactorAuthenticationSecret: 'H4PDSPALPFIXKH3W',
       isTwoFactorAuthenticationEnabled: false,
     },
   ];
