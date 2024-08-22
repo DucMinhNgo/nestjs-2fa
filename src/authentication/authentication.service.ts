@@ -49,7 +49,10 @@ export class AuthenticationService {
   }
 
   async generateTwoFactorAuthenticationSecret(user: User) {
-    const secret = authenticator.generateSecret();
+    // const secret = authenticator.generateSecret();
+    // console.log(authenticator.generateSecret());
+
+    const secret = "H4PDSPALPFIXKH3W";
 
     const otpAuthUrl = authenticator.keyuri(user.email, 'DucNgo', secret);
 
@@ -69,7 +72,7 @@ export class AuthenticationService {
   }
 
   generateTwoFactorAuthenticationToken(user: User) {
-    console.log(authenticator.generateSecret());
+    // console.log(authenticator.generateSecret());
     return authenticator.generate(user.twoFactorAuthenticationSecret);
   }
 

@@ -7,9 +7,9 @@ export class UsersService {
     {
       userId: 1,
       email: 'duc.ngo@gmail.com',
-      username: 'john',
+      username: 'ducngo',
       password: '123456',
-      twoFactorAuthenticationSecret: 'xpto-1',
+      twoFactorAuthenticationSecret: '111111',
       isTwoFactorAuthenticationEnabled: false,
     },
   ];
